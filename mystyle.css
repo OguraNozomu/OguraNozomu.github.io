@@ -1,7 +1,11 @@
 body{
   margin: 0px;
-  background-color: skyblue;
-  }
+  background-color: silver;
+}
+.name{
+  background-color: #333333;
+  color: #ffffff;
+}
 .all{
   width:800px;
   border-color:#999999;
@@ -10,10 +14,19 @@ body{
   background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
-}﻿
-.menu {
-  background-color: #333333;
-  padding: 5px;
-  font-size: 1em;
-  text-align:center; 
 }
+.menu{
+  background-color: #333333;
+  color: #ffffff;
+  padding: 5px;
+  font-size: 2em;
+  text-align:center;
+}
+.welcome{
+  text-align: center;
+}
+.move{
+  font-size: 1.5em;
+  background-color: #DDDDDD;
+}
+a:link { color: silver; }
