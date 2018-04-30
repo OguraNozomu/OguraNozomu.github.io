@@ -1,0 +1,19 @@
+body{
+  margin: 0px;
+  background-color: skyblue;
+  }
+.all{
+  width:800px;
+  border-color:#999999;
+  border-width:1px;
+  border-style:solid;
+  background-color: #ffffff;
+  margin-left: auto;
+  margin-right: auto;
+}﻿
+.menu {
+  background-color: #333333;
+  padding: 5px;
+  font-size: 1em;
+  text-align:center; 
+}
