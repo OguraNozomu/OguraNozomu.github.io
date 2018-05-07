@@ -1,13 +1,9 @@
 body{
-  margin: 0px;
-  background-color: silver;
+  
 }
-.name{
-  background-color: #333333;
-  color: #ffffff;
-}
+
 .all{
-  width:800px;
+  width:auto;
   border-color:#999999;
   border-width:1px;
   border-style:solid;
@@ -15,18 +11,73 @@ body{
   margin-left: auto;
   margin-right: auto;
 }
-.menu{
+
+.name{
   background-color: #333333;
   color: #ffffff;
-  padding: 5px;
-  font-size: 2em;
-  text-align:center;
+  font-size: 1.2em;
 }
+
+.menuback{
+  background-color: #333333;
+  color: #ffffff;
+  text-align:center;
+  padding:0.3em;
+}
+
 .welcome{
   text-align: center;
 }
+
 .move{
   font-size: 1.5em;
   background-color: #DDDDDD;
 }
+
 a:link { color: silver; }
+
+.menu{
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  height:40px;
+  width: 160px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #fff;
+  border:solid 1px #fff;
+  overflow: hidden;
+  z-index: 1;
+}
+.menu:after{
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 0;
+  width: 100%;
+  background : #fff;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  z-index: -1;
+}
+.menu:hover{
+  color: #000000;
+}
+.menu:hover:after{
+  height: 250%;
+  opacity: 1;
+}
+.menu:active:after{
+  height: 350%;
+  opacity: 1;
+}
