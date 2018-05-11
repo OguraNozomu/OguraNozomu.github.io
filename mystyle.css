@@ -1,18 +1,23 @@
 body{
-  height: 100%
+  width:100%;
 }
 
 .all{
   background-color: #ffffff;
   margin-left: auto;
   margin-right: auto;
+  width: 100%;
 }
 
-.name{
+.pagename{
   background-color: #333333;
   color: #ffffff;
   font-size: 1.2em;
-  padding:auto;
+}
+
+.header{
+  text-align: center;
+  margin: 0;
 }
 
 .menuback{
