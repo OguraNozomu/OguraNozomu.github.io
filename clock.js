@@ -11,14 +11,13 @@ function clock()
     let minute= now.getMinutes();
     let second = now.getSeconds();
 
-    // 日付時刻文字列のなかで常に2ケタにしておきたい部分はここで処理
-    if (month < 10) mo = "0" + month;
-    if (date < 10) d = "0" + date;
+    if (month < 10) month = "0" + month;
+    if (date < 10) date = "0" + date;
+    if (hour < 10) hour = "0" + hour;
     if (minute < 10) minute = "0" + minute;
     if (second < 10) second = "0" + second;
 
     document.getElementById("clock").innerHTML =  year + "/" + month + "/" + date + " (" + week + ")"+ hour + ":" + minute + ":" + second;
 }
 
-// 上記のclock関数を1000ミリ秒ごと(毎秒)に実行する
 setInterval(clock, 1000);
